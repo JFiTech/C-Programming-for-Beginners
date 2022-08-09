@@ -1,0 +1,22 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "c language prime numbers challenge using arrays",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g", //COMPILATION COMMAND FOR GLOBAL
+                "-o", //TO CREATE AN OBJECT FILE
+                "prime_numbers", //NAME OF THE EXECUTABLE
+                "prime_numbers.c" //NAME OF SOURCE FILE
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

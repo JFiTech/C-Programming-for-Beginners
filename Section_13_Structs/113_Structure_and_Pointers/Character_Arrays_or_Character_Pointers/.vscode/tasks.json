@@ -1,0 +1,22 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "c language character arrays and character pointers example",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g", //COMPILATION COMMAND FOR GLOBAL
+                "-o", //TO CREATE AN OBJECT FILE
+                "character_arrays_or_character_pointers", //NAME OF THE EXECUTABLE
+                "character_arrays_or_character_pointers.c" //NAME OF SOURCE FILE
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

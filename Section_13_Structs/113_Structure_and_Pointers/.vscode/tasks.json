@@ -1,0 +1,35 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "c language accessing pointers example",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g", //COMPILATION COMMAND FOR GLOBAL
+                "-o", //TO CREATE AN OBJECT FILE
+                "structures_and_pointers", //NAME OF THE EXECUTABLE
+                "structures_and_pointers.c" //NAME OF SOURCE FILE
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "EXECUTION - c language accessing pointers example",
+            "type": "shell",
+            "command": "./structures_and_pointers.exe",
+            "args": [
+                ""
+            ],
+            "group": {
+                "kind": "test",
+                "isDefault": false
+            },
+            "problemMatcher": []
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "c language array code example",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g", //COMPILATION COMMAND FOR GLOBAL
+                "-o", //TO CREATE AN OBJECT FILE
+                "array_example", //NAME OF THE EXECUTABLE
+                "array_example.c" //NAME OF SOURCE FILE
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

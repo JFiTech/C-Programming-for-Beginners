@@ -1,0 +1,24 @@
+/*
+	AUTHOR: JFITECH
+	PURPOSE: CHALLENGE 8 - SIMPLE WEATHER PROGRAM - MY SOLUTION
+	DATE: MARCH 21ST, 2022
+*/
+
+
+#include <stdio.h>
+
+// FUNCTION DECLARATION
+void add(); // WE'RE TELLING THE COMPILER THAT WE'RE GONNA USE THE FUNCTION SOMEWHERE, 
+            // BUT WE DON'T KNOW WHERE THE IMPLEMENTATION IS. 
+
+int main(){
+    add();
+
+
+    return 0;
+}
+
+// add FUNCTION 
+void add(){
+
+}
